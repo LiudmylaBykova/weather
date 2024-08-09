@@ -27,7 +27,7 @@
     border-radius: 20px;
     padding: 10px 20px;
     background-color: var(--backgroundLight);
-    box-shadow: 2px 5px 12px -3px var(--shadow);
+    box-shadow: 2px 5px 8px -3px var(--shadow);
 
     @media screen and (min-width: 768px) {
         width: 200px;
@@ -151,7 +151,7 @@
     background-image: url(/cloud-image.png);
     background-position: top -40px right -280px;
     background-repeat: no-repeat;
-    box-shadow: 2px 5px 12px -3px var(--shadow);
+    box-shadow: 2px 5px 8px -3px var(--shadow);
 
     @media screen and (min-width: 768px) {
         width: 500px;

@@ -1,5 +1,5 @@
-import React from "react";
 import { RotatingLines } from "react-loader-spinner";
+
 import css from "../Loader/Loader.module.css";
 
 const Loader = () => {

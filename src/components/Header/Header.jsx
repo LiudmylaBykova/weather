@@ -1,9 +1,9 @@
-import React from "react";
-
-import css from "./Header.module.css";
 import { NavLink } from "react-router-dom";
+
 import SearchBar from "../SearchBar/SearchBar";
 import icon from "../../assets/icons.svg";
+
+import css from "./Header.module.css";
 
 const Header = () => {
   return (

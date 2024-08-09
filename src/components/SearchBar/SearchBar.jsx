@@ -1,11 +1,12 @@
-import React from "react";
-import css from "../SearchBar/SearchBar.module.css";
 import { useDispatch } from "react-redux";
-import { getWeatherData } from "../../redux/weather/weatherOps";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+
+import { getWeatherData } from "../../redux/weather/weatherOps";
 import icon from "../../assets/icons.svg";
+
+import css from "../SearchBar/SearchBar.module.css";
 
 const schema = yup.object().shape({
   city: yup.string().required("Please, enter the city!"),

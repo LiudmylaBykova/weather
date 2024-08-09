@@ -1,8 +1,7 @@
-import React from "react";
+import { convertTo24Hour } from "../../helpers/convertTo24Hour";
+import icon from "../../assets/icons.svg";
 
 import css from "../TodayWeather/TodayWeather.module.css";
-import icon from "../../assets/icons.svg";
-import { convertTo24Hour } from "../../helpers/convertTo24Hour";
 
 const TodayWeather = ({ data }) => {
   return (
@@ -51,6 +50,7 @@ const TodayWeather = ({ data }) => {
           )}
         </div>
       </div>
+
       <div className={css.todayDetailsWrap}>
         {data && data.current && (
           <ul className={css.detailsList}>

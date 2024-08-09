@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import TodayWeather from "../../components/TodayWeather/TodayWeather";
-
-import css from "../Home/Home.module.css";
-import FutureWeather from "../../components/FutureWeather/FutureWeather";
 import { useDispatch, useSelector } from "react-redux";
+
+import TodayWeather from "../../components/TodayWeather/TodayWeather";
+import FutureWeather from "../../components/FutureWeather/FutureWeather";
 import {
   selectIsError,
   selectIsLoading,
@@ -11,6 +10,8 @@ import {
 } from "../../redux/selectors";
 import Loader from "../../components/Loader/Loader";
 import { getWeatherData } from "../../redux/weather/weatherOps";
+
+import css from "../Home/Home.module.css";
 
 const Home = () => {
   const isLoading = useSelector(selectIsLoading);

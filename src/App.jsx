@@ -1,9 +1,10 @@
-import { Route, Routes } from "react-router";
 import "./App.css";
+import { Route, Routes } from "react-router";
+import { Suspense } from "react";
+
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
 import Loader from "./components/Loader/Loader";
-import { Suspense } from "react";
 
 function App() {
   return (

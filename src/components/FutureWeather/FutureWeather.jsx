@@ -1,7 +1,7 @@
-import React from "react";
-import css from "../FutureWeather/FutureWeather.module.css";
 import { getDate } from "../../helpers/getDate";
 import { getDay } from "../../helpers/getDay";
+
+import css from "../FutureWeather/FutureWeather.module.css";
 
 const FutureWeather = ({ data }) => {
   const forecast = data.forecast;
@@ -17,7 +17,6 @@ const FutureWeather = ({ data }) => {
           </li>
         </ul>
       </div>
-
       <ul className={css.forecastList}>
         {forecast &&
           forecast.forecastday.map((day, index) => (

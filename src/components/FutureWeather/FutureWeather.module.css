@@ -35,7 +35,7 @@
     border-radius: 5px;
     color: var(--textLight);
     background-color: var(--backgroundLight);
-    box-shadow: 2px 5px 12px -3px var(--shadow);
+    box-shadow: 2px 5px 8px -3px var(--shadow);
 
     @media screen and (min-width: 768px) {
         width: 110px;
@@ -59,7 +59,7 @@
     background-color: var(--backgroundLight);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    box-shadow: 2px 5px 12px -3px var(--shadow);
+    box-shadow: 2px 5px 8px -3px var(--shadow);
 
     @media screen and (min-width: 768px) {
         gap: 10px;
