@@ -3,8 +3,8 @@ export function getDay(dateString) {
     "Sunday",
     "Monday",
     "Tuesday",
-    "Thirthday",
-    "Forthday",
+    "Wednesday",
+    "Thursday",
     "Friday",
     "Saturday",
   ];
