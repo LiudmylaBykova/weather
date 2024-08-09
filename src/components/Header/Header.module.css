@@ -1,0 +1,69 @@
+.header {
+    width: 100%;
+    padding: 20px 10px 0 10px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.headerInner {
+    display: flex;
+    align-items: center;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main);
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 20px;
+        font-size: 25px;
+    }
+}
+
+.iconLogo {
+    @media screen and (min-width: 768px) {
+        width: 45px;
+        height: 45px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+.themeBtn {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 20px;
+    }
+}
+
+.themeIcon {
+    @media screen and (min-width: 768px) {
+        width: 26px;
+        height: 26px;
+    }
+}
