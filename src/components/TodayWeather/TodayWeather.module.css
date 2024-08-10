@@ -90,8 +90,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 140px;
-        height: 140px;
+        width: 90px;
+        height: 90px;
     }
 
 }
@@ -199,7 +199,8 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: var(--textLight);
+    background-color: var(--commonBackgroundLight);
+    box-shadow: 2px 5px 6px -3px var(--shadow);
 
     @media screen and (min-width: 768px) {
         width: 30px;

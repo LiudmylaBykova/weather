@@ -1,10 +1,13 @@
+import { Providers } from "../../providers";
 import Header from "../Header/Header";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
-      {children}
+      <Providers>
+        <Header />
+        {children}
+      </Providers>
     </>
   );
 };

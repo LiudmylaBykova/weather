@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { useTheme } from "next-themes";
 
 import SearchBar from "../SearchBar/SearchBar";
 import icon from "../../assets/icons.svg";
@@ -6,6 +7,11 @@ import icon from "../../assets/icons.svg";
 import css from "./Header.module.css";
 
 const Header = () => {
+  const { setTheme, resolvedTheme } = useTheme();
+
+  const themeToggle = () => {
+    setTheme(resolvedTheme === "light" ? "dark" : "light");
+  };
   return (
     <header className={css.header}>
       <div className={css.headerInner}>
@@ -15,7 +21,7 @@ const Header = () => {
           </svg>
           Weather
         </NavLink>
-        <button className={css.themeBtn} type="button">
+        <button className={css.themeBtn} type="button" onClick={themeToggle}>
           <svg className={css.themeIcon} width="18" height="18">
             <use href={`${icon}#icon-theme`}></use>
           </svg>
