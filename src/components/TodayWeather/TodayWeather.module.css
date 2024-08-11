@@ -27,7 +27,7 @@
     border-radius: 20px;
     padding: 10px 20px;
     background-color: var(--backgroundLight);
-    box-shadow: 2px 5px 8px -3px var(--shadow);
+    box-shadow: 2px 5px 8px 1px var(--shadow);
 
     @media screen and (min-width: 768px) {
         width: 200px;
@@ -151,7 +151,7 @@
     background-image: url(/cloud-image.png);
     background-position: top -40px right -280px;
     background-repeat: no-repeat;
-    box-shadow: 2px 5px 8px -3px var(--shadow);
+    box-shadow: 2px 5px 8px 1px var(--shadow);
 
     @media screen and (min-width: 768px) {
         width: 500px;
@@ -200,7 +200,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: var(--commonBackgroundLight);
-    box-shadow: 2px 5px 6px -3px var(--shadow);
+    box-shadow: 2px 5px 8px 1px var(--shadow);
 
     @media screen and (min-width: 768px) {
         width: 30px;
@@ -243,10 +243,17 @@
     }
 }
 
-.detailsText {
+.detailsText,
+.detailsTextSpan {
     font-size: 12px;
+    color: var(--textDark);
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
     }
+}
+
+.detailsTextSpan {
+    color: var(--textLight);
+    margin-left: 10px;
 }

@@ -20,7 +20,7 @@
 
 .searchForm:hover,
 .searchForm:focus {
-    box-shadow: 2px 5px 8px -3px var(--shadow);
+    box-shadow: 2px 5px 8px 1px var(--shadow);
 }
 
 
@@ -67,6 +67,7 @@
 
 .searchSvg {
     transition: all 0.3s ease-in-out;
+    fill: var(--textLight);
 
     @media screen and (min-width: 768px) {
         width: 20px;

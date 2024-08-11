@@ -1,13 +1,15 @@
-import { Providers } from "../../providers";
+"use client";
+import { ThemeProvider } from "next-themes";
+
 import Header from "../Header/Header";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Providers>
+      <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
         <Header />
         {children}
-      </Providers>
+      </ThemeProvider>
     </>
   );
 };

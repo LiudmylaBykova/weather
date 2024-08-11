@@ -21,8 +21,8 @@ const TodayWeather = ({ data }) => {
               className={css.todaySvg}
               src={data.current.condition.icon}
               alt={data.current.condition.text}
-              width="50"
-              height="50"
+              width={50}
+              height={50}
             />
           )}
         </div>
@@ -62,8 +62,11 @@ const TodayWeather = ({ data }) => {
                   </svg>
                 </div>
                 <p className={css.detailsText}>
-                  Temperature: {Math.round(data.current.temp_c)}&#176; feels
-                  like {Math.round(data.current.feelslike_c)}&#176;
+                  Temperature:{" "}
+                  <span className={css.detailsTextSpan}>
+                    {Math.round(data.current.temp_c)}&#176; feels like:
+                    {Math.round(data.current.feelslike_c)}&#176;
+                  </span>
                 </p>
               </div>
             </li>
@@ -75,7 +78,10 @@ const TodayWeather = ({ data }) => {
                   </svg>
                 </div>
                 <p className={css.detailsText}>
-                  Pressure: {data.current.pressure_mb} mm Hg
+                  Pressure:{" "}
+                  <span className={css.detailsTextSpan}>
+                    {data.current.pressure_mb} mm Hg
+                  </span>
                 </p>
               </div>
             </li>
@@ -87,7 +93,10 @@ const TodayWeather = ({ data }) => {
                   </svg>
                 </div>
                 <p className={css.detailsText}>
-                  Precipitation: {data.current.condition.text}
+                  Precipitation:{" "}
+                  <span className={css.detailsTextSpan}>
+                    {data.current.condition.text}
+                  </span>
                 </p>
               </div>
             </li>
@@ -99,7 +108,10 @@ const TodayWeather = ({ data }) => {
                   </svg>
                 </div>
                 <p className={css.detailsText}>
-                  Wind: {data.current.wind_mph / 4} m/s {data.current.wind_dir}
+                  Wind:{" "}
+                  <span className={css.detailsTextSpan}>
+                    {data.current.wind_mph / 4} m/s {data.current.wind_dir}
+                  </span>
                 </p>
               </div>
             </li>

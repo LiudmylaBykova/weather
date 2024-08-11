@@ -35,7 +35,7 @@
     border-radius: 5px;
     color: var(--textLight);
     background-color: var(--backgroundLight);
-    box-shadow: 2px 5px 8px -3px var(--shadow);
+    box-shadow: 2px 5px 8px 1px var(--shadow);
 
     @media screen and (min-width: 768px) {
         width: 110px;
@@ -59,7 +59,7 @@
     background-color: var(--backgroundLight);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    box-shadow: 2px 5px 8px -3px var(--shadow);
+    box-shadow: 2px 5px 8px 1px var(--shadow);
 
     @media screen and (min-width: 768px) {
         gap: 10px;
@@ -125,7 +125,7 @@
 }
 
 .dayData {
-    font-size: 10px;
+    font-size: 12px;
     color: var(--textDark);
     margin-right: auto;
 
@@ -155,7 +155,7 @@
 }
 
 .dayTemperature {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
 
     @media screen and (min-width: 768px) {
@@ -169,25 +169,25 @@
 }
 
 .nightTemperature {
-    font-size: 10px;
+    font-size: 14px;
     color: var(--textDark);
 
     @media screen and (min-width: 768px) {
-        font-size: 12px;
+        font-size: 16px;
         margin-bottom: 6px;
     }
 
     @media screen and (min-width: 1200px) {
-        font-size: 13px;
+        font-size: 18px;
     }
 }
 
 .precipitation {
-    font-size: 10px;
+    font-size: 12px;
     color: var(--textDark);
 
     @media screen and (min-width: 768px) {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     @media screen and (min-width: 1200px) {

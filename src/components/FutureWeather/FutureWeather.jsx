@@ -29,8 +29,8 @@ const FutureWeather = ({ data }) => {
                     className={css.svg}
                     src={day.day.condition.icon}
                     alt={day.day.condition.text}
-                    width="24"
-                    height="24"
+                    width={30}
+                    height={30}
                   />
                   <p className={css.dayTemperature}>
                     {Math.round(day.day.maxtemp_c)}&#176;
