@@ -15,10 +15,11 @@ const schema = yup.object().shape({
 
 const SearchBar = () => {
   const data = useSelector(selectWeather);
+  console.log(data.location.name);
   const dispatch = useDispatch();
 
   const defaultValues = {
-    city: data.location.name || "Kyiv",
+    city: data && data.current ? data.location.name : "Kyiv",
     days: 7,
   };
 
