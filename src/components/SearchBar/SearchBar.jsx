@@ -1,9 +1,10 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import { getWeatherData } from "../../redux/weather/weatherOps";
+import { selectWeather } from "../../redux/selectors";
 import icon from "../../assets/icons.svg";
 
 import css from "../SearchBar/SearchBar.module.css";
@@ -12,13 +13,14 @@ const schema = yup.object().shape({
   city: yup.string().required("Please, enter the city!"),
 });
 
-const defaultValues = {
-  city: "Kyiv",
-  days: 7,
-};
-
 const SearchBar = () => {
+  const data = useSelector(selectWeather);
   const dispatch = useDispatch();
+
+  const defaultValues = {
+    city: data.location.name || "Kyiv",
+    days: 7,
+  };
 
   const {
     register,

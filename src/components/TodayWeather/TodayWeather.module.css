@@ -245,11 +245,11 @@
 
 .detailsText,
 .detailsTextSpan {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--textDark);
 
     @media screen and (min-width: 768px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
