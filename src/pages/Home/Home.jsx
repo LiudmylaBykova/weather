@@ -9,6 +9,7 @@ import {
   selectWeather,
 } from "../../redux/selectors";
 import Loader from "../../components/Loader/Loader";
+import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import { getWeatherData } from "../../redux/weather/weatherOps";
 
 import css from "../Home/Home.module.css";
@@ -32,6 +33,7 @@ const Home = () => {
   return (
     <div className={css.homeSection}>
       {isLoading && <Loader />}
+      {isError && <ErrorMessage />}
       {!isLoading && !isError && <TodayWeather data={data} />}
       {!isLoading && !isError && <FutureWeather data={data} />}
     </div>
