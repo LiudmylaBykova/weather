@@ -64,7 +64,7 @@ const TodayWeather = ({ data }) => {
                 <p className={css.detailsText}>
                   Temperature:{" "}
                   <span className={css.detailsTextSpan}>
-                    {Math.round(data.current.temp_c)}&#176; feels like:
+                    {Math.round(data.current.temp_c)}&#176; feels like:{" "}
                     {Math.round(data.current.feelslike_c)}&#176;
                   </span>
                 </p>
@@ -80,7 +80,7 @@ const TodayWeather = ({ data }) => {
                 <p className={css.detailsText}>
                   Pressure:{" "}
                   <span className={css.detailsTextSpan}>
-                    {data.current.pressure_mb} mm Hg
+                    {data.current.pressure_mb} mm Mb
                   </span>
                 </p>
               </div>
