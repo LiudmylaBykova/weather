@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 axios.defaults.baseURL = "https://api.weatherapi.com/v1";
-const API = "01832842340f4f4586595157243107";
+const API = "d0284ea5f04e489d81d91501241508";
 
 export const getWeatherData = createAsyncThunk(
   "weather/fetchAll",

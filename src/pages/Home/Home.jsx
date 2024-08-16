@@ -25,6 +25,7 @@ const Home = () => {
       q: "Kyiv",
       days: 7,
     };
+
     if (data.length === 0) {
       dispatch(getWeatherData(searchParams));
     }
